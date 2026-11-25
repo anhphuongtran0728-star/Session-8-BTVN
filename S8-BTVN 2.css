@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    padding: 10px;
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box{
+    color: white;
+    background-color: palevioletred;
+    border: solid;
+   
+   
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+
+    width: calc(25% - 6px);
+    height: 100px;
+}
+
+@media screen and (max-width: 768px){
+    .box{
+        width: calc(50% - 4px);
+    }
+}
+
+@media screen and (max-width: 480px){
+    .box{
+        width: 100%;
+    }
+}
+
+    
